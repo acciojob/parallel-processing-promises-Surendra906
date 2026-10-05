@@ -20,11 +20,11 @@ function downloadImage(imgObj){
 }
 
 function downloadImages(){
-	loading.classlist.remove("hidden");
+	loading.classList.remove("hidden");
 	errorDiv.innerText="";
 	output.innerHTML="";
 	const promises=images.map((image)=>downloadImage(image));
-	Promise.all(promises).then((downloadImages)=>{
+	Promise.all(promises).then((downloadedImages)=>{
 		loading.classList.add("hidden");
 		downloadedImages.forEach((img)=>{
 			output.appendChild(img);
