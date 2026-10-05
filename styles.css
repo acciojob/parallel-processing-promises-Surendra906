@@ -1,1 +1,17 @@
 /*  your css code here. If applicable */
+.hidden {
+	display:none;
+}
+#loading {
+	font-weight:bold;
+	color:#333;
+	
+}
+#error {
+	color:red;
+	margin-top:10px;
+}
+#output img {
+	margin:5px;
+	display:inline-block;
+}
